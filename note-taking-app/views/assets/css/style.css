@@ -1,0 +1,102 @@
+/* Custom styles for the note-taking app */
+
+/* Smooth transitions */
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Note cards hover effect */
+.note-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.note-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal animation */
+.modal-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.modal-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Custom scrollbar for textarea */
+textarea::-webkit-scrollbar {
+    width: 6px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Toast notification animations */
+.toast-show {
+    transform: translateX(0) !important;
+}
+
+.toast-hide {
+    transform: translateX(100%) !important;
+}
+
+/* Loading animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive design improvements */
+@media (max-width: 768px) {
+    .note-card {
+        margin-bottom: 1rem;
+    }
+    
+    #noteModal .bg-white {
+        margin: 1rem;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+}
+
+/* Focus styles for better accessibility */
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid #3B82F6;
+    outline-offset: 2px;
+}
+
+/* Custom button styles */
+.btn-danger {
+    background-color: #EF4444;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #DC2626;
+}
+
+.btn-secondary {
+    background-color: #6B7280;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #4B5563;
+}
