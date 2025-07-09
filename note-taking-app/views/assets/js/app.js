@@ -79,7 +79,7 @@ class NotesApp {
     }
 
     createNoteCard(note) {
-        const createdDate = new Date(note.created_at).toLocaleDateString();
+        const createdDate = new Date(note.createdAt).toLocaleString();
         const truncatedContent = note.content.length > 150 
             ? note.content.substring(0, 150) + '...' 
             : note.content;

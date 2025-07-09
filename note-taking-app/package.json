@@ -3,21 +3,28 @@
   "version": "1.0.0",
   "description": "A simple note-taking application with Node.js and MySQL",
   "main": "server.js",
+  "type": "commonjs",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
     "create-db": "node create_database.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "mysql2": "^3.6.0",
+    "@prisma/client": "^6.11.1",
+    "body-parser": "^1.20.2",
     "cors": "^2.8.5",
-    "body-parser": "^1.20.2"
+    "express": "^4.18.2",
+    "prisma": "^6.11.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
   },
-  "keywords": ["nodejs", "mysql", "mvc", "notes"],
-  "author": "Your Name",
+  "keywords": [
+    "nodejs",
+    "mysql",
+    "mvc",
+    "notes"
+  ],
+  "author": "Amrit Adhikari",
   "license": "MIT"
 }
