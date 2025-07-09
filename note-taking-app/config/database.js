@@ -3,7 +3,7 @@ const mysql = require('mysql2');
 const dbConfig = {
   host: 'localhost',
   user: 'root',
-  password: 'your_password', // Change this to your MySQL password
+  password: 'Adhikari123$', 
   database: 'notes_app',
   waitForConnections: true,
   connectionLimit: 10,
